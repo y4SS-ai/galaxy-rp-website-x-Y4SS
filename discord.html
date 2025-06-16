@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord - Galaxy Roleplay Server</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      :root {
+      --primary-color: #670c83;
+      --secondary-color: #431a66;
+      --accent-color: #5c2e77;
+      --bg-dark: rgba(26, 26, 46, 0.85);
+      --bg-card: rgba(42, 42, 64, 0.85);
+      --text-light: #e6e6fa;
+    }
+
+
+    
+    
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://cdn.discordapp.com/attachments/1290442636649566323/1384210322105045136/R_1.png?ex=685199d2&is=68504852&hm=563a28bf4867d802296e90a995ba642b9a7f85e55906003b897fc40cc2ebf329&');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+    .discord-container {
+        max-width: 1200px;
+        background-color: rgba(26, 26, 46, 0.85);
+        margin: 120px auto 2rem;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 0 20px var(--primary-color);
+    }
+ .background-color {
+    --primary-color: #b388eb; /* بنفسجي فاتح */
+    --text-color: #e6e6fa;
+}
+    .discord-card {
+        background-color: var(--bg-card);
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        padding: 3rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 15px var(--secondary-color);
+    }
+
+    .discord-card h2 {
+        color: #e6e6fa;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 8px var(--primary-color);
+    }
+
+    .discord-card p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: var(--text-light);
+    }
+
+    .discord-button {
+        background-color: #e6e6fa;
+        color: #866d9491;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 0 0 10px var(--primary-color);
+    }
+
+    .discord-button:hover {
+        transform: scale(1.05);
+        background-color: #2d0d3541;
+        box-shadow: 0 0 20px #00000042;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .feature-item {
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        padding: 2rem;
+        text-align: center;
+        color: var(--text-light);
+        box-shadow: 0 0 10px var(--secondary-color);
+    }
+
+    .feature-item i {
+        font-size: 3rem;
+        color: #e6e6fa;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 6px var(--primary-color);
+    }
+
+    .feature-item h3 {
+        color: #e6e6fa;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 5px var(--primary-color);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-dark);
+      padding: 1rem 3rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 0 15px var(--primary-color);
+    }
+
+    .navbar .logo h1 {
+      color: #e6e6fa;
+      margin: 0;
+      text-shadow: 0 0 5px var(--primary-color);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #e6e6fa;
+      text-shadow: 0 0 6px var(--primary-color);
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Galaxy RP
+</h1>
+
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="discord.html" class="active">Discord</a></li>
+        </ul>
+    </nav>
+
+    <main class="discord-container">
+        <div class="discord-card">
+            <h2>Join our Discord!</h2>
+            <p>Connect with our community and stay informed about all server updates.</p>
+            <a href="https://discord.gg/galaxydzrp" target="_blank" class="discord-button">
+                <i class="fab fa-discord"></i> Join Discord
+            </a>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Server Announcements</h3>
+                <p>Stay informed about all important updates and events</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <h3>Active Community</h3>
+                <p>Connect with other players</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-headset"></i>
+                <h3>Support</h3>
+                <p>Help with questions and problems</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-gamepad"></i>
+                <h3>Events</h3>
+                <p>Participate in regular community events</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>A unique Galaxy roleplay server focused on realism and community.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="discord.html">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://discord.gg/galaxydzrp" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Galaxy Roleplay Server. All rights reserved. | <a href="imprint.html" style="color: var(--primary-color); text-decoration: none;">Imprint</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
